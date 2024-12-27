@@ -1,20 +1,12 @@
-function showAlert() {
-    alert("Hello! Welcome to our website.");
+const colors = ['#ff6b6b', '#feca57', '#48dbfb', '#1dd1a1', '#ff9ff3', '#5f27cd'];
+
+function changeBackgroundColor() {
+    const body = document.body;
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    body.style.background = randomColor;
 }
 
-window.addEventListener('load', function() {
-    setTimeout(function() {
-        document.getElementById('graduated-image').style.opacity = 1;  // Show the image after 1 second
-    }, 1000); // Delay of 1 second before showing the image
-});
-
-window.addEventListener('scroll', function() {
-    const image = document.getElementById('graduated-image');
-    const imagePosition = image.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight;
-
-    // Show the image when it comes into the viewport (scroll)
-    if (imagePosition < screenPosition) {
-        image.style.opacity = 1;
-    }
-});
+const dynamicText = document.getElementById('dynamicText');
+setInterval(() => {
+    dynamicText.style.color = colors[Math.floor(Math.random() * colors.length)];
+}, 1000);
