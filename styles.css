@@ -33,7 +33,7 @@ nav ul li a {
 }
 
 #hero {
-    background-image: url('https://via.placeholder.com/1200x400'); /* Add your hero image here */
+    background-image: url('https://via.placeholder.com/1200x400');  /* Use a placeholder image for the background */
     background-size: cover;
     color: #fff;
     text-align: center;
