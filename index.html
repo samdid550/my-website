@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Agency</title>
+    <title>University Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -12,23 +13,46 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to Our Travel Agency</h1>
-            <p>Your adventure begins here</p>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to XYZ University</h1>
+            <p>Empowering Students for a Brighter Future</p>
+            <button onclick="scrollToSection('about')">Learn More</button>
         </div>
     </section>
-    
+
     <section id="about">
         <h2>About Us</h2>
-        <p>We are a leading travel agency dedicated to providing you with the best travel experiences. Whether you're looking for a relaxing beach vacation, an adventurous hike, or a cultural exploration, we have something for everyone.</p>
+        <p>XYZ University is a leading institution dedicated to providing quality education and fostering research and innovation.</p>
     </section>
-    
+
+    <section id="programs">
+        <h2>Our Programs</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Computer Science</h3>
+                <p>Explore the world of technology and software development.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-flask"></i>
+                <h3>Chemistry</h3>
+                <p>Dive into the study of matter and its interactions.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Business Administration</h3>
+                <p>Learn the fundamentals of managing and leading businesses.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <form>
@@ -46,7 +70,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+        <p>&copy; 2024 XYZ University. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
