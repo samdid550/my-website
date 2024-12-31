@@ -1,157 +1,125 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
+/* Footer Styles */
+footer {
     background-color: #003366;
     color: white;
-    padding: 1em 0;
+    padding: 20px 0;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-nav ul li {
-    margin: 0 20px;
+.footer-top {
+    border-bottom: 1px solid #ffffff33;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-nav ul li a {
+.footer-top p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-buttons button {
+    background-color: transparent;
+    border: 1px solid white;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background-image: url('https://via.placeholder.com/1920x1080');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 150px 0;
-    position: relative;
-}
-
-.hero-content {
-    background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 20px 40px;
-    border-radius: 10px;
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.5em;
-    margin: 10px 0 20px;
-}
-
-.hero button {
     padding: 10px 20px;
-    font-size: 1em;
-    background-color: #ffcc00;
-    color: #003366;
-    border: none;
+    margin: 0 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.hero button:hover {
-    background-color: #ffaa00;
+.footer-buttons button:hover {
+    background-color: white;
+    color: #003366;
 }
 
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 2.5em;
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-section p {
-    font-size: 1.2em;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.cards {
+.footer-logo {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.card i {
-    font-size: 3em;
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-form label {
-    margin: 10px 0 5px;
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
-form input, form textarea {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.footer-contact {
+    text-align: left;
 }
 
-form button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #003366;
-    color: white;
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact button {
+    background-color: white;
+    color: #003366;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-form button:hover {
-    background-color: #0055aa;
+.footer-contact button:hover {
+    background-color: #ffcc00;
 }
 
-footer {
-    background-color: #003366;
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    margin: 10px 20px;
+}
+
+.footer-links a {
+    display: block;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #ffffff33;
+    padding-top: 20px;
+}
+
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ffcc00;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
